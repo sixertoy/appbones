@@ -1,0 +1,38 @@
+{
+  "name": "appbones",
+  "version": "0.0.0",
+  "description": "Place your project's description here",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sixertoy/appbones"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": {
+    "name": "sixertoy",
+    "email": "sixertoy.github@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sixertoy/appbones/issues"
+  },
+  "homepage": "https://github.com/sixertoy/appbones",
+  "dependencies": {
+    "js-yaml": "^3.2.3",
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.2",
+    "grunt": "^0.4.5",
+    "grunt-bump": "0.0.16",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-jasmine-node": "git://github.com/sixertoy/grunt-jasmine-node",
+    "grunt-markdown": "^0.6.1",
+    "load-grunt-config": "^0.16.0"
+  }
+}

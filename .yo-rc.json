@@ -1,0 +1,16 @@
+{
+  "generator-gruntproject": {
+    "author": {
+      "name": "sixertoy",
+      "email": "sixertoy.github@gmail.com"
+    },
+    "project": {
+      "name": "yeoman-bones",
+      "repository": "https://github.com/sixertoy/appbones",
+      "description": "Place your project's description here"
+    },
+    "conditionnals": {
+      "travis": false
+    }
+  }
+}
