@@ -1,0 +1,6 @@
+---
+# files
+root:
+    - html:
+        - css
+        - js

@@ -1,0 +1,8 @@
+---
+# files
+root:
+    - [toto.txt, .toto.yml]
+    - html:
+        - css
+        - js:
+            - [_toto.txt, _.toto.yml]

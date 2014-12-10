@@ -15,7 +15,7 @@
             helper = new Helper();
         });
 
-        if('should throw', function(){
+        it('should throw', function(){
             expect(function(){
                 result = helper.render();
             }).toThrow();

@@ -4,7 +4,7 @@
   "description": "Place your project's description here",
   "main": "index.js",
   "scripts": {
-    "test": "node tests"
+    "test": "grunt jasmine_node"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/sixertoy/appbones",
   "dependencies": {
+    "fs-extra": "^0.12.0",
     "js-yaml": "^3.2.3",
     "lodash": "^2.4.1"
   },

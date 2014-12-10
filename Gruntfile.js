@@ -11,9 +11,5 @@
 module.exports = function (grunt) {
     'use strict';
     // load configs
-    require('load-grunt-config')(grunt, {
-        data: {
-            banner: grunt.file.read('./grunt/banner.tpl', 'utf-8')
-        }
-    });
+    require('load-grunt-config')(grunt);
 };

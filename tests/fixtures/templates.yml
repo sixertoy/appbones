@@ -1,0 +1,4 @@
+---
+# files
+root:
+    - [_toto.txt, _.toto.yml]
