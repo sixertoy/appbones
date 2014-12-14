@@ -13,6 +13,8 @@ npm install appbones --save
 
 ## Usage
 
+* app.js
+
 ```js
 appbones = require('appbones');
 
@@ -25,6 +27,8 @@ appbones('../relative/path/to/bones/file.yml', {
     }
 });
 ```
+
+* bones.yml
 
 ```yaml
 ---
