@@ -26,6 +26,17 @@ appbones('../relative/path/to/bones/file.yml', {
 });
 ```
 
+```yaml
+---
+# files
+root:
+    - [toto.txt, .toto.yml]
+    - html:
+        - css:
+        - js:
+            - [_toto.txt, _.toto.yml]
+```
+
 ### Notes
 
 **appbones** source and destination path are resolved with node **path.resolve** relative to current used module

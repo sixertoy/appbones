@@ -1,7 +1,7 @@
 {
   "name": "appbones",
-  "version": "0.0.0",
-  "description": "Place your project's description here",
+  "version": "0.1.0",
+  "description": "Build path/directory and templates/files from an yaml config file",
   "main": "index.js",
   "scripts": {
     "test": "grunt tests"
