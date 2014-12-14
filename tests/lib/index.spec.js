@@ -15,9 +15,11 @@
 
         beforeEach(function () {});
 
-        it('should return false', function () {
+        it('should throw', function () {
             file = path.join(cwd, 'tests/fixtures/toto.yml');
-            expect(appbones(file)).toBe(false);
+            expect(function () {
+                appbones(file);
+            }).toThrow();
         });
 
         it('should return true', function () {
