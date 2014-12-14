@@ -107,7 +107,12 @@
         it('should have created folders described in bones.yml', function (done) {
             appbones.sourcePath('../templates');
             appbones.destinationPath('../expected');
-            appbones('../fixtures/folders.yml');
+            appbones('../fixtures/bones.yml', {
+                content: {
+                    txt: 'txt',
+                    yml: 'yml'
+                }
+            });
             setTimeout(function () {
                 var f1 = path.resolve(__dirname, '../expected/toto.txt'),
                     f2 = path.resolve(__dirname, '../expected/.toto.yml'),
@@ -119,23 +124,11 @@
 
                 expect(fs.existsSync(f7)).toBe(true);
                 expect(fs.existsSync(f6)).toBe(true);
-                /*
                 expect(fs.existsSync(f5)).toBe(true);
                 expect(fs.existsSync(f4)).toBe(true);
                 expect(fs.existsSync(f3)).toBe(true);
                 expect(fs.existsSync(f2)).toBe(true);
                 expect(fs.existsSync(f1)).toBe(true);
-                */
-
-                /*
-                fs.removeSync(f7);
-                fs.removeSync(f6);
-                fs.removeSync(f5);
-                fs.removeSync(f4);
-                fs.removeSync(f3);
-                fs.removeSync(f2);
-                fs.removeSync(f1);
-                */
 
                 done();
             }, 2000);

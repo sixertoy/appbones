@@ -4,7 +4,7 @@
   "description": "Place your project's description here",
   "main": "index.js",
   "scripts": {
-    "test": "grunt jasmine_node"
+    "test": "grunt tests"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-jasmine-node": "git://github.com/sixertoy/grunt-jasmine-node",
     "grunt-markdown": "^0.6.1",
-    "load-grunt-config": "^0.16.0"
+    "load-grunt-config": "^0.16.0",
+    "grunt-contrib-clean": "^0.6.0"
   }
 }

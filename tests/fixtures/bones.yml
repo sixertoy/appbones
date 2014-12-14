@@ -3,6 +3,6 @@
 root:
     - [toto.txt, .toto.yml]
     - html:
-        - css
+        - css:
         - js:
             - [_toto.txt, _.toto.yml]
