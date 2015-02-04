@@ -20,7 +20,7 @@ AppBones = require('appbones');
 
 // @param [source, destination]
 var builder = new AppBones('../templates', '/abs/path/to/project/dir');
-// @param [yml_file, (template_data), (lodash_options)]
+// @param [yml_file, (template_data)]
 builder.build('../relative/path/to/bones/file.yml', {
     anobject: {
         content: 'for',
@@ -48,7 +48,10 @@ root:
 
 ### History
 
+v0.2.3 - Update package.json
+
 v0.2.2 - Update documentation
+
 v0.2.1 - Change fs-extra for mem-fs-editor
 
 ---
