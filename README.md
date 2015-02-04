@@ -16,11 +16,12 @@ npm install appbones --save
 * app.js
 
 ```js
-appbones = require('appbones');
+AppBones = require('appbones');
 
-appbones.sourcePath('../templates');
-appbones.destinationPath('/abs/path/to/project/dir');
-appbones('../relative/path/to/bones/file.yml', {
+// @param [source, destination]
+var builder = new AppBones('../templates', '/abs/path/to/project/dir');
+// @param [yml_file, (template_data), (lodash_options)]
+builder.build('../relative/path/to/bones/file.yml', {
     anobject: {
         content: 'for',
         replacing: 'lodash.template()'
@@ -45,9 +46,18 @@ root:
 
 **appbones** source and destination path are resolved with node **path.resolve** relative to current used module
 
+### History
+
+v0.2.2 - Update documentation
+v0.2.1 - Change fs-extra for mem-fs-editor
+
+---
+
+v0.1.7 - ...
+
 ## Dependencies
 
-* [**fs-extra**](https://github.com/jprichardson/node-fs-extra) - ^0.12.0
+* [**mem-fs-editor**](https://github.com/SBoudrias/mem-fs-editor) - ^1.2.1
 * [**js-yaml**](https://github.com/nodeca/js-yaml) - ^3.2.3
 * [**lodash**](https://lodash.com) - ^2.4.1
 

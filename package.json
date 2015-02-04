@@ -1,6 +1,6 @@
 {
   "name": "appbones",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Build path/directory and templates/files from an yaml config file",
   "main": "index.js",
   "scripts": {
