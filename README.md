@@ -48,6 +48,8 @@ root:
 
 ### History
 
+v0.2.6 - Fix sub files creation
+
 v0.2.3 - Update package.json
 
 v0.2.2 - Update documentation
