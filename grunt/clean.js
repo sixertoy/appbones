@@ -3,7 +3,7 @@
 module.exports = function (grunt, options) {
     return {
         expected: [
-            './tests/expected/html'
+            './tests/expected'
         ]
     };
 };

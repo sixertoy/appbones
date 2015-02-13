@@ -106,12 +106,11 @@
                     var f1 = path.resolve(__dirname, '../expected/html'),
                         f2 = path.resolve(__dirname, '../expected/html/js'),
                         f3 = path.resolve(__dirname, '../expected/html/css');
+
                     expect(fs.existsSync(f1)).toBe(true);
                     expect(fs.existsSync(f2)).toBe(true);
                     expect(fs.existsSync(f3)).toBe(true);
-                    fs.removeSync(f1);
-                    fs.removeSync(f2);
-                    fs.removeSync(f3);
+
                     done();
                 }, 2000);
             });
@@ -125,9 +124,7 @@
                         f2 = path.resolve(__dirname, '../expected/.toto.yml');
                     expect(fs.existsSync(f1)).toBe(true);
                     expect(fs.existsSync(f2)).toBe(true);
-                    // remove
-                    fs.removeSync(f1);
-                    fs.removeSync(f2);
+
                     done();
                 }, 2000);
             });
@@ -158,20 +155,16 @@
                     expect(fs.readFileSync(f2, {
                         encoding: 'utf8'
                     })).toEqual(res);
-                    // remove
-                    fs.removeSync(f1);
-                    fs.removeSync(f2);
                     done();
                 }, 2000);
             });
 
         });
 
-        /*
         it('should have created folders described in bones.yml', function (done) {
-            appbones.sourcePath('../templates');
-            appbones.destinationPath('../expected');
-            appbones('../fixtures/bones.yml', {
+            helper = new AppBones('../templates', '../expected');
+            file = path.join(cwd, 'tests/fixtures/bones.yml');
+            helper.build(file, {
                 content: {
                     txt: 'txt',
                     yml: 'yml'
@@ -196,8 +189,8 @@
 
                 done();
             }, 2000);
+
         });
-        */
 
         afterEach(function () {
             res = null;

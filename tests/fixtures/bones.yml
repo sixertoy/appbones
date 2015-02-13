@@ -3,6 +3,7 @@
 root:
     - [toto.txt, .toto.yml]
     - html:
-        - css:
+        - css
         - js:
+            - vendor
             - [_toto.txt, _.toto.yml]
