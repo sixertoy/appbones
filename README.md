@@ -48,6 +48,10 @@ root:
 
 ### History
 
+v0.2.8 - Fix undescore inside files name
+
+v0.2.7 - Grammatically english updated
+
 v0.2.6 - Fix sub files creation
 
 v0.2.3 - Update package.json

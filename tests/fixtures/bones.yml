@@ -3,7 +3,9 @@
 root:
     - [toto.txt, .toto.yml]
     - html:
-        - css
+        - css:
+            - vendor
+            - [_toto_underscored.txt, toto_underscored.yml, empty_file.txt]
         - js:
             - vendor
             - [_toto.txt, _.toto.yml]

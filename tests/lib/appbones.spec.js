@@ -177,8 +177,14 @@
                     f5 = path.resolve(__dirname, '../expected/html/css'),
                     f4 = path.resolve(__dirname, '../expected/html/js'),
                     f6 = path.resolve(__dirname, '../expected/html/js/toto.txt'),
-                    f7 = path.resolve(__dirname, '../expected/html/js/.toto.yml');
+                    f7 = path.resolve(__dirname, '../expected/html/js/.toto.yml'),
+                    f8 = path.resolve(__dirname, '../expected/html/css/toto_underscored.txt'),
+                    f9 = path.resolve(__dirname, '../expected/html/css/toto_underscored.yml'),
+                    f10 = path.resolve(__dirname, '../expected/html/css/empty_file.txt');
 
+                expect(fs.existsSync(f10)).toBe(false);
+                expect(fs.existsSync(f9)).toBe(true);
+                expect(fs.existsSync(f8)).toBe(true);
                 expect(fs.existsSync(f7)).toBe(true);
                 expect(fs.existsSync(f6)).toBe(true);
                 expect(fs.existsSync(f5)).toBe(true);
