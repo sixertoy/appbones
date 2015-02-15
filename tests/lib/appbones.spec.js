@@ -174,21 +174,23 @@
                 var f1 = path.resolve(__dirname, '../expected/toto.txt'),
                     f2 = path.resolve(__dirname, '../expected/.toto.yml'),
                     f3 = path.resolve(__dirname, '../expected/html'),
+                    f4 = path.resolve(__dirname, '../expected/html/non_exists.js'),
                     f5 = path.resolve(__dirname, '../expected/html/css'),
-                    f4 = path.resolve(__dirname, '../expected/html/js'),
-                    f6 = path.resolve(__dirname, '../expected/html/js/toto.txt'),
-                    f7 = path.resolve(__dirname, '../expected/html/js/.toto.yml'),
-                    f8 = path.resolve(__dirname, '../expected/html/css/toto_underscored.txt'),
-                    f9 = path.resolve(__dirname, '../expected/html/css/toto_underscored.yml'),
-                    f10 = path.resolve(__dirname, '../expected/html/css/empty_file.txt');
+                    f6 = path.resolve(__dirname, '../expected/html/js'),
+                    f7 = path.resolve(__dirname, '../expected/html/js/toto.txt'),
+                    f8 = path.resolve(__dirname, '../expected/html/js/.toto.yml'),
+                    f9 = path.resolve(__dirname, '../expected/html/css/toto_underscored.txt'),
+                    f10 = path.resolve(__dirname, '../expected/html/css/toto_underscored.yml'),
+                    f11 = path.resolve(__dirname, '../expected/html/css/empty_file.txt');
 
+                expect(fs.existsSync(f11)).toBe(true);
                 expect(fs.existsSync(f10)).toBe(true);
                 expect(fs.existsSync(f9)).toBe(true);
                 expect(fs.existsSync(f8)).toBe(true);
                 expect(fs.existsSync(f7)).toBe(true);
                 expect(fs.existsSync(f6)).toBe(true);
                 expect(fs.existsSync(f5)).toBe(true);
-                expect(fs.existsSync(f4)).toBe(true);
+                expect(fs.existsSync(f4)).toBe(false);
                 expect(fs.existsSync(f3)).toBe(true);
                 expect(fs.existsSync(f2)).toBe(true);
                 expect(fs.existsSync(f1)).toBe(true);

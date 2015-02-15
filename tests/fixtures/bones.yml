@@ -3,6 +3,7 @@
 root:
     - [toto.txt, .toto.yml]
     - html:
+        - [non_exists.js]
         - css:
             - vendor
             - [_toto_underscored.txt, toto_underscored.yml, empty_file.txt]
