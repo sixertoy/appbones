@@ -182,7 +182,7 @@
                     f9 = path.resolve(__dirname, '../expected/html/css/toto_underscored.yml'),
                     f10 = path.resolve(__dirname, '../expected/html/css/empty_file.txt');
 
-                expect(fs.existsSync(f10)).toBe(false);
+                expect(fs.existsSync(f10)).toBe(true);
                 expect(fs.existsSync(f9)).toBe(true);
                 expect(fs.existsSync(f8)).toBe(true);
                 expect(fs.existsSync(f7)).toBe(true);

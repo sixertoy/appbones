@@ -48,6 +48,8 @@ root:
 
 ### History
 
+v0.2.9 - Fix empty files
+
 v0.2.8 - Fix undescore inside files name
 
 v0.2.7 - Grammatically english updated
