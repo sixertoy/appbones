@@ -10,6 +10,6 @@ after_success:
 deploy:
   provider: npm
   email: "sixertoy.github@gmail.com"
-  api_key: "bWFsYXMzNDojaGVsbG8kd29ybGQj"
+  api_key: "5A7k6gniaEyzHr9X7fPC"
   on:
     branch: master
