@@ -1,5 +1,9 @@
 /*jslint indent: 4 */
-/*global module */
-(function(){
-    module.exports = require('./lib/appbones.js');
+/*global module, require */
+(function () {
+
+    'use strict';
+
+    module.exports = require('./src/appbones.js');
+
 }());

@@ -1,0 +1,41 @@
+# fichier
+src_appbones.*.js:
+    build:
+        - describe build task
+    construct:
+        fails:
+            - because
+            - not because
+        notfails:
+            - because
+            - not because
+# fichier
+src/toto/fichier.js:
+    # describe
+    une_methode:
+        # it
+        - describe build task
+    # describe
+    une_autre_methode:
+        # describe
+        une_description_du_cas:
+            # it
+            - un cas
+            # it
+            - un autre cas
+        # describe
+        une_autre_description_du_cas:
+            # it
+            - un cas
+            # it
+            - un autre cas
+src/new_file.js:
+    # it
+    - un autre cas
+    - un autre cas 2
+    - un autre cas 3
+src/other.js:
+    # it
+    - un autre cas
+    - un autre cas 2
+    - un autre cas 3

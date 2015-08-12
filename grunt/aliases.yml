@@ -1,9 +1,3 @@
 default:
   - jshint
-  - jasmine_node
   - markdown
-tests:
-    - jshint
-    - clean
-    - jasmine_node
-    - clean

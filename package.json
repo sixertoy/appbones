@@ -1,16 +1,19 @@
 {
   "name": "appbones",
-  "version": "0.2.14",
+  "version": "0.3.1",
   "description": "Build path/directory and templates/files from an yaml config file",
   "main": "index.js",
   "scripts": {
-    "test": "grunt tests"
+    "pretest": "rm -rf spec/expected",
+    "test": "istanbul test node_modules/mocha/bin/_mocha -R spec ./spec/lib/**/*.spec.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/sixertoy/appbones"
   },
   "keywords": [
+    "yml",
+    "scaffold",
     "grunt",
     "folder",
     "files",
@@ -28,10 +31,9 @@
   "homepage": "https://github.com/sixertoy/appbones",
   "dependencies": {
     "js-yaml": "^3.2.3",
-    "lodash": "^2.4.1",
-    "mem-fs-editor": "^1.2.1",
+    "lodash": "^3.10.1",
     "mem-fs": "^1.0.1",
-    "mkdirp": "^0.5.0"
+    "mem-fs-editor": "^1.2.1"
   },
   "devDependencies": {
     "coveralls": "^2.11.2",
@@ -40,8 +42,8 @@
     "grunt-bump": "0.0.16",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-jshint": "^0.10.0",
-    "grunt-jasmine-node": "^0.3.1",
     "grunt-markdown": "^0.6.1",
-    "load-grunt-config": "^0.16.0"
+    "load-grunt-config": "^0.16.0",
+    "mocha": "^2.2.5"
   }
 }
